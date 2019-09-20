@@ -1,3 +1,4 @@
+/*--colors---*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,10 +134,48 @@ html,
 body {
   margin: auto;
   width: 90%;
-  font-family: 'tbd', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  text-align: center;
 }
 h1,
 h2,
 h3 {
-  font-family: 'tbd', sans-serif;
+  font-family: 'Pacifico', sans-serif;
+}
+header {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+}
+header a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 2%;
+  color: black;
+  background: lightcoral;
+}
+/*---Left Box---*/
+#leftBox {
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  border: 1px solid darkslategrey;
+}
+/*----Middle Box---*/
+#middleBox {
+  display: flex;
+  justify-content: column-reverse;
+  align-content: space-around;
+}
+/*---Right Box----*/
+#rightBox {
+  display: flex;
+  justify-content: flex-end;
+  align-content: stretch;
+  border: 1px solid darkslategrey;
 }
