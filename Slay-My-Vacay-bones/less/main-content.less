@@ -1,9 +1,21 @@
 /*---Left Box---*/
 
 #leftBox {
-    .display(flex-start; stretch);
+    display: flext;
+    width: 6%;
+    box-shadow: inset 0 0 0 1000px @light-sunset;
     border: 1px solid darkslategrey;
-}
+    margin-bottom: .5rem;
+    
+    @media  (@tablet) {
+		flex-direction: column;
+	}
+
+    @media (@mobile)  {
+		flex-direction: column;
+		width: 100%;
+	}
+};	
 
 
 
@@ -11,8 +23,15 @@
 
 /*----Middle Box---*/
 
-#middleBox {
-    .display(column-reverse; space-around);
+#middleBoxes {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 40%;
+    margin: auto;
+
+    @media(@mobile) {
+        width: 90%;
+    }
 }
 
 
@@ -23,4 +42,9 @@
 #rightBox {
     .display(flex-end; stretch);
     border: 1px solid darkslategrey;
+
+    @media(@mobile) {
+        .display(center; center);
+        width: 90%;
+    }
 }

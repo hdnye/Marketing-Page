@@ -1,4 +1,5 @@
 /*--colors---*/
+/*---Media Queries---*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,7 +152,15 @@ header {
   width: 90%;
   margin: auto;
 }
-header a {
+@media ((max-width: 500px)) {
+  header nav {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    margin: auto;
+  }
+}
+header nav a {
   text-decoration: none;
   border: 1px solid black;
   border-radius: 10%;
@@ -159,18 +168,44 @@ header a {
   color: black;
   background: lightcoral;
 }
+@media ((max-width: 500px)) {
+  header nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+  }
+}
 /*---Left Box---*/
 #leftBox {
-  display: flex;
-  justify-content: flex-start;
-  align-content: stretch;
+  display: flext;
+  width: 6%;
+  box-shadow: inset 0 0 0 1000px #e77727;
   border: 1px solid darkslategrey;
+  margin-bottom: 0.5rem;
+}
+@media ((max-width: 800px)) {
+  #leftBox {
+    flex-direction: column;
+  }
+}
+@media ((max-width: 500px)) {
+  #leftBox {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 /*----Middle Box---*/
-#middleBox {
+#middleBoxes {
   display: flex;
-  justify-content: column-reverse;
-  align-content: space-around;
+  flex-flow: column-reverse;
+  width: 40%;
+  margin: auto;
+}
+@media ((max-width: 500px)) {
+  #middleBoxes {
+    width: 90%;
+  }
 }
 /*---Right Box----*/
 #rightBox {
@@ -178,4 +213,18 @@ header a {
   justify-content: flex-end;
   align-content: stretch;
   border: 1px solid darkslategrey;
+}
+@media ((max-width: 500px)) {
+  #rightBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+  }
+}
+footer {
+  width: 100%;
+  background: #e77727;
+  border-top: 1px solid darkslategrey;
+  text-align: center;
 }

@@ -7,6 +7,14 @@ header {
     margin: auto;
 
     
+    nav {
+     
+        @media (@mobile) {
+			display: flex;
+			flex-flow: column-reverse wrap;
+			align-content: center;
+			margin: auto;
+			}
     
      a {
          text-decoration: none;
@@ -16,6 +24,14 @@ header {
          color: black;
          background: lightcoral;
 
+         @media (@mobile) {
+			border-bottom: 1px solid black;
+			width: 100%;
+			text-align: center;
+			padding: 2% 0;
+
+		}
+
      }
-   
+    } 
 };
