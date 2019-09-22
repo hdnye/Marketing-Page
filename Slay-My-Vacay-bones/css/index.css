@@ -186,7 +186,7 @@ header nav a {
   text-align: center;
 }
 header nav a:hover {
-  background: #d1920b;
+  background: #f17907;
 }
 @media (max-width: 500px) {
   header nav a {
@@ -244,10 +244,22 @@ header nav a:hover {
 }
 footer {
   width: 100%;
-  background: #e77727;
+  background: #d2691e;
   border-top: 1px solid darkslategrey;
   text-align: center;
+  padding: 0.5%;
 }
-footer nav a {
+footer nav {
   display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 1%;
+}
+footer a {
+  transition: background-color 1s ease-out;
+  border-radius: 10%;
+  text-align: center;
+}
+footer a:hover {
+  background: #f17907;
 }
