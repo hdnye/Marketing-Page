@@ -1,15 +1,26 @@
 
 header {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    width: 90%;
+   
+    width: 100%;
+    height: auto;
+    padding: 2%;
     margin: auto;
+    background-image: url('../images/sunset1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+    background-attachment: fixed;
+    
 
+        // img {
+        //     height: 200px;
+        //     width: 800px;
+        // }
     
     nav {
+     .display(space-evenly, center);
+       padding-top: 2%;
      
-        @media (@mobile) {
+        @media @mobile {
 			display: flex;
 			flex-flow: column-reverse wrap;
 			align-content: center;
@@ -18,13 +29,14 @@ header {
     
      a {
          text-decoration: none;
-         border: 1px solid black;
-         border-radius: 10%;
-         padding: 2%;
-         color: black;
-         background: lightcoral;
+         color: #ececff;
+         margin-top: 4%;
+         width: 100px;
 
-         @media (@mobile) {
+         .button();
+         
+
+         @media @mobile {
 			border-bottom: 1px solid black;
 			width: 100%;
 			text-align: center;

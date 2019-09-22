@@ -135,24 +135,40 @@ html,
 body {
   margin: auto;
   width: 90%;
+  padding: 0.5%;
   font-family: 'Raleway', sans-serif;
 }
 h1 {
   text-align: center;
+  font-size: 5rem;
+  color: #ececff;
 }
 h1,
 h2,
-h3 {
-  font-family: 'Pacifico', sans-serif;
+h3,
+a {
+  font-family: 'Pacifico', cursive;
+}
+#main-container {
+  background-color: #ececff;
 }
 header {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-  width: 90%;
+  width: 100%;
+  height: auto;
+  padding: 2%;
   margin: auto;
+  background-image: url('../images/sunset1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
-@media ((max-width: 500px)) {
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
   header nav {
     display: flex;
     flex-flow: column-reverse wrap;
@@ -162,13 +178,17 @@ header {
 }
 header nav a {
   text-decoration: none;
-  border: 1px solid black;
+  color: #ececff;
+  margin-top: 4%;
+  width: 100px;
+  transition: background-color 1s ease-out;
   border-radius: 10%;
-  padding: 2%;
-  color: black;
-  background: lightcoral;
+  text-align: center;
 }
-@media ((max-width: 500px)) {
+header nav a:hover {
+  background: #d1920b;
+}
+@media (max-width: 500px) {
   header nav a {
     border-bottom: 1px solid black;
     width: 100%;
@@ -184,12 +204,12 @@ header nav a {
   border: 1px solid darkslategrey;
   margin-bottom: 0.5rem;
 }
-@media ((max-width: 800px)) {
+@media (max-width: 800px) {
   #leftBox {
     flex-direction: column;
   }
 }
-@media ((max-width: 500px)) {
+@media (max-width: 500px) {
   #leftBox {
     flex-direction: column;
     width: 100%;
@@ -202,7 +222,7 @@ header nav a {
   width: 40%;
   margin: auto;
 }
-@media ((max-width: 500px)) {
+@media (max-width: 500px) {
   #middleBoxes {
     width: 90%;
   }
@@ -214,7 +234,7 @@ header nav a {
   align-content: stretch;
   border: 1px solid darkslategrey;
 }
-@media ((max-width: 500px)) {
+@media (max-width: 500px) {
   #rightBox {
     display: flex;
     justify-content: center;
@@ -227,4 +247,7 @@ footer {
   background: #e77727;
   border-top: 1px solid darkslategrey;
   text-align: center;
+}
+footer nav a {
+  display: flex;
 }

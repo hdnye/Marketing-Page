@@ -7,11 +7,11 @@
     border: 1px solid darkslategrey;
     margin-bottom: .5rem;
     
-    @media  (@tablet) {
+    @media  @tablet {
 		flex-direction: column;
 	}
 
-    @media (@mobile)  {
+    @media @mobile  {
 		flex-direction: column;
 		width: 100%;
 	}
@@ -29,7 +29,7 @@
     width: 40%;
     margin: auto;
 
-    @media(@mobile) {
+    @media @mobile {
         width: 90%;
     }
 }
@@ -43,7 +43,7 @@
     .display(flex-end; stretch);
     border: 1px solid darkslategrey;
 
-    @media(@mobile) {
+    @media @mobile {
         .display(center; center);
         width: 90%;
     }
