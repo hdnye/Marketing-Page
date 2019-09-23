@@ -4,6 +4,12 @@
     align-content: @align;
 }
 
+.displayFlex(@flex-direction, @justify-content) {
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @flex-direction;
+}
+
 .button() {
     transition: background-color 1s ease-out;
     border-radius: 10%;
