@@ -143,6 +143,11 @@ h1 {
   font-size: 5rem;
   color: #ececff;
 }
+@media (max-width: 500px) {
+  h1 {
+    color: black;
+  }
+}
 h1,
 h2,
 h3,
@@ -161,6 +166,12 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+}
+@media (max-width: 500px) {
+  header {
+    background-image: none;
+    /*logo here*/
+  }
 }
 header nav {
   display: flex;
@@ -194,6 +205,7 @@ header nav a:hover {
     width: 100%;
     text-align: center;
     padding: 2% 0;
+    color: black;
   }
 }
 /*---Left Box---*/
@@ -255,11 +267,30 @@ footer nav {
   align-content: center;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  footer nav {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    margin: auto;
+  }
+}
 footer a {
+  text-decoration: none;
+  color: #ececff;
   transition: background-color 1s ease-out;
   border-radius: 10%;
   text-align: center;
 }
 footer a:hover {
   background: #f17907;
+}
+@media (max-width: 500px) {
+  footer a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+    color: black;
+  }
 }

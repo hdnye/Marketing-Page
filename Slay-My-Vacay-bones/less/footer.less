@@ -10,9 +10,27 @@ footer {
     nav  {
        .display(space-evenly; center);
        padding: 1%; 
+
+       @media @mobile {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-content: center;
+        margin: auto;
+        
+        }
     }
       
     a {
+        text-decoration: none;
+        color: #ececff;
         .button();
+
+        @media @mobile {
+			border-bottom: 1px solid black;
+			width: 100%;
+			text-align: center;
+            padding: 2% 0;
+            color: black;
     }
+ }
 }

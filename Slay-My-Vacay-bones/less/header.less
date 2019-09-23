@@ -9,6 +9,11 @@ header {
 	background-repeat: no-repeat;
 	background-size: 100%;
     background-attachment: fixed;
+
+    @media @mobile {
+        background-image: none;
+        /*logo here*/
+    }
     
 
         // img {
@@ -24,7 +29,8 @@ header {
 			display: flex;
 			flex-flow: column-reverse wrap;
 			align-content: center;
-			margin: auto;
+            margin: auto;
+            
 			}
     
      a {
@@ -40,7 +46,8 @@ header {
 			border-bottom: 1px solid black;
 			width: 100%;
 			text-align: center;
-			padding: 2% 0;
+            padding: 2% 0;
+            color: black;
 
 		}
 
