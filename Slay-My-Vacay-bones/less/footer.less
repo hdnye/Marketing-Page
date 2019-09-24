@@ -27,11 +27,20 @@ footer {
         .button();
 
         @media @mobile {
-			border-bottom: 1px solid black;
+            // border-bottom: 1px solid black;
+            text-decoration: underline;
 			width: 100%;
 			text-align: center;
             padding: 2% 0;
             color: black;
+
+           
     }
- }
+   }
+
+   p {
+       @media @mobile {
+           font-size: 10px;
+       }
+   }
 }

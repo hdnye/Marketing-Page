@@ -132,6 +132,18 @@ table {
   box-sizing: border-box;
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}
+@media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+}
 html,
 body {
   margin: auto;
@@ -144,8 +156,15 @@ h1 {
   font-size: 5rem;
   color: #ececff;
 }
+@media (max-width: 800px) {
+  h1 {
+    display: flex;
+    font-size: 1.75rem;
+  }
+}
 @media (max-width: 500px) {
   h1 {
+    font-size: 5rem;
     color: black;
   }
 }
@@ -167,13 +186,30 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    padding: 0;
+    display: flex;
+  }
+  header h1 {
+    color: whitesmoke;
+  }
+}
 @media (max-width: 500px) {
   header {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin: auto;
     background-image: url('../images/buildWeekLogo.png');
     background-repeat: no-repeat;
     object-fit: scale-down;
     /*logo here*/
   }
+}
+header h1 {
+  color: black;
 }
 header nav {
   display: flex;
@@ -181,8 +217,15 @@ header nav {
   align-content: center;
   padding-top: 2%;
 }
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    padding: 0;
+  }
+}
 @media (max-width: 500px) {
   header nav {
+    padding-top: 15%;
     display: flex;
     flex-flow: column-reverse wrap;
     align-content: center;
@@ -202,10 +245,17 @@ header nav a {
 header nav a:hover {
   background: #f17907;
 }
+@media (max-width: 800px) {
+  header nav a {
+    width: 100%;
+    color: whitesmoke;
+  }
+}
 @media (max-width: 500px) {
   header nav a {
-    border-bottom: 1px solid black;
+    text-decoration: underline;
     width: 100%;
+    padding-bottom: 2%;
     text-align: center;
     padding: 2% 0;
     color: black;
@@ -220,6 +270,11 @@ header nav a:hover {
   /*----Middle Box---*/
   /*---Right Box----*/
 }
+@media (max-width: 800px) {
+  #center-container {
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   #center-container {
     flex-direction: column;
@@ -230,6 +285,11 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: column;
+}
+@media (max-width: 800px) {
+  #center-container #sidebar {
+    flex-direction: column;
+  }
 }
 @media (max-width: 500px) {
   #center-container #sidebar {
@@ -243,6 +303,16 @@ header nav a:hover {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 800px) {
+  #center-container #leftBox {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #center-container #leftBox {
+    display: none;
+  }
+}
 #center-container #leftBox #leftBox1 img {
   max-width: 100%;
   max-height: 100%;
@@ -250,16 +320,6 @@ header nav a:hover {
 #center-container #leftBox #leftBox2 img {
   max-width: 100%;
   max-height: 100%;
-}
-@media (max-width: 800px) {
-  #center-container #leftBox {
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  #center-container #leftBox {
-    display: none;
-  }
 }
 #center-container #middleBoxes {
   display: flex;
@@ -272,6 +332,12 @@ header nav a:hover {
 }
 #center-container #middleBoxes h2 {
   text-align: center;
+}
+@media (max-width: 800px) {
+  #center-container #middleBoxes {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   #center-container #middleBoxes {
@@ -290,9 +356,24 @@ header nav a:hover {
 #center-container #rightBox .form_label {
   margin: auto;
 }
+@media (max-width: 800px) {
+  #center-container #rightBox .form_label {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 800px) {
+  #center-container #rightBox {
+    border-radius: 15%;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0.75rem;
+  }
+}
 @media (max-width: 500px) {
   #center-container #rightBox {
     width: 100%;
+    border-radius: 50%;
   }
 }
 .form {
@@ -359,10 +440,15 @@ footer a:hover {
 }
 @media (max-width: 500px) {
   footer a {
-    border-bottom: 1px solid black;
+    text-decoration: underline;
     width: 100%;
     text-align: center;
     padding: 2% 0;
     color: black;
+  }
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 10px;
   }
 }
