@@ -174,8 +174,16 @@ h3,
 a {
   font-family: 'Pacifico', cursive;
 }
+h2 {
+  font-size: 1.5rem;
+}
 #main-container {
   background-color: #ececff;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: underline;
 }
 header {
   width: 100%;
@@ -207,9 +215,9 @@ header {
     object-fit: scale-down;
     /*logo here*/
   }
-}
-header h1 {
-  color: black;
+  header h1 {
+    color: black;
+  }
 }
 header nav {
   display: flex;
@@ -345,7 +353,7 @@ header nav a:hover {
   }
 }
 #center-container #rightBox {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   width: 400px;
   height: 200px;
