@@ -250,7 +250,6 @@ header nav a {
   padding-bottom: 2%;
   width: 100px;
   transition: background-color 1s ease-out;
-  border-radius: 10%;
   text-align: center;
 }
 header nav a:hover {
@@ -495,7 +494,6 @@ footer a {
   text-decoration: none;
   color: #ececff;
   transition: background-color 1s ease-out;
-  border-radius: 10%;
   text-align: center;
 }
 footer a:hover {
