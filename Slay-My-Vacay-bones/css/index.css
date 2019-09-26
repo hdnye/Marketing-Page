@@ -386,31 +386,19 @@ header nav a:hover {
     border-radius: 50%;
   }
 }
-.container {
-  margin: 10px 0;
-}
-@media (min-width: 800px) {
-  .container {
-    width: 90%;
-  }
-}
-.container .developers {
+.developers {
   text-align: center;
   margin: 1rem 1rem;
   width: 100%;
 }
-.container .ui {
+img.logo {
+  display: none;
+}
+.ui {
   text-align: left;
   margin: 1rem 0;
 }
-@media (min-width: 800px) {
-  .container .ui {
-    display: flex;
-    flex-flow: column wrap;
-    width: 30%;
-  }
-}
-.container .ui .ui-title {
+.ui .ui-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
