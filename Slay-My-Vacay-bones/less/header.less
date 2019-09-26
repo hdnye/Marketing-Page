@@ -1,0 +1,91 @@
+
+header {
+   
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin: auto;
+    background-image: url('../images/sunset1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+    
+
+
+    @media @tablet {
+        width: 100%;
+        padding: 0;
+        display: flex;
+
+        h1 {
+            
+            color: whitesmoke;
+            
+        }
+    }
+
+    @media @mobile {
+        display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+        margin: auto;
+        background-image: url('../images/buildWeekLogo.png');
+        background-repeat: no-repeat;
+        object-fit: scale-down;
+        /*logo here*/
+   
+
+        h1 {
+            color: black;
+        }
+    
+ }
+        
+    
+    nav {
+     .display(space-evenly, center);
+       padding-top: 2%;
+     
+       @media @tablet {
+        width: 100%;
+        padding: 0;
+    }
+
+        @media @mobile {
+            padding-top: 15%;
+            display: flex;
+			flex-flow: column-reverse wrap;
+			align-content: center;
+            margin: auto;
+            
+			}
+    
+     a {
+         text-decoration: none;
+         color: #ececff;
+         margin-top: 4%;
+         padding-bottom: 2%;
+         width: 100px;
+
+         .button();
+
+         @media @tablet {
+            width: 100%;
+            color: whitesmoke
+            
+        }
+         
+
+         @media @mobile {
+            // border-bottom: 1px solid black;
+            text-decoration: underline;
+            width: 100%;
+            padding-bottom: 2%;
+			text-align: center;
+            padding: 2% 0;
+            color: black;
+
+		}
+
+     }
+    } 
+};

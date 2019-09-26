@@ -1,0 +1,45 @@
+.form {
+
+    margin: auto;
+    padding: 10px;
+    
+}
+
+// .form_label {
+
+//     @media @mobile {
+//         margin: auto;
+//         padding-top: 10%;
+//     }
+
+
+.form .form_label {
+
+    font-size: 15px;
+    font-weight:bold;
+    color:white;
+    text-decoration:underline;
+}
+.form input[type="text"],input[type="password"] {
+        
+    border-radius: .5%;
+    font-size: 1rem;
+    padding-left:5px;
+    
+}
+
+.form input[type="submit"] {
+
+    border:none;
+    border-radius: .7%;
+    font-size: 1rem;
+    background-color:#7F8C8D;
+    border-bottom: 3px solid #616A6B;
+    color:white;
+    font-weight:bold;
+    transition: background-color 1s ease-in;
+    &:hover {
+        background: black;
+        transform: scale(1.2) perspective(1px);
+    }
+}

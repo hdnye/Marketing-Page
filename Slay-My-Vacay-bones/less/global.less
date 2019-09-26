@@ -1,0 +1,63 @@
+* {
+ box-sizing: border-box;
+ border-radius: 50%;
+
+ @media @tablet {
+     box-sizing: border-box;
+     border-radius: 0;
+ }
+ 
+ @media @mobile {
+    box-sizing: border-box;
+    border-radius: 50%;
+ }
+ 
+}
+
+body {
+    background-color: seafoam;
+}
+
+html, body {
+    margin: auto;
+    width: 90%;
+    padding: .5%;
+    font-family: 'Raleway', sans-serif;
+    
+  
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: @light-violet;
+
+    @media @tablet {
+        display: flex;
+        font-size: 1.75rem;
+    }
+    @media @mobile {
+        font-size: 5rem;
+        color: black;
+    }
+}
+
+h1, h2, h3, a {
+   font-family: 'Pacifico', cursive;
+   
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+ 
+#main-container {
+    
+    background-color:  @light-violet;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+}

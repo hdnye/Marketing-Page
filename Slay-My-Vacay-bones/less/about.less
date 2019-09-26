@@ -1,0 +1,218 @@
+// .container {
+    
+//     // width: 48rem;
+//     margin: 10px 0;
+
+//         @media(min-width: 800px) {
+//             width: 90%;
+//         }
+    
+
+    .developers {
+        text-align: center;
+        margin: 1rem 1rem;
+        width: 100%;
+
+        // @media(min-width: 800px) {
+        //     width: 20%;
+        // }
+    }
+
+img.logo {
+    display: none;
+}
+
+    .ui {
+        text-align: left;
+        margin: 1rem 0;
+
+    // @media(min-width: 800px){
+    //             display: flex;
+    //             flex-flow: column wrap;
+    //             width: 30%;
+    //             }
+        .ui-title { 
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            
+        }
+   }       
+
+.footabout {
+    margin-top: 1rem;
+}
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+    margin: 10px 0;
+    width: 95%;
+
+    &__side {
+        height: 52rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: .3rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(black, .15);
+
+        &--front {
+            background-color: white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: radial-gradient(ellipse at center, #268026 20%, #205564);
+            }
+
+            &-2 {
+                background-image: radial-gradient(ellipse at center, #008B8B 20%, #103A9B);
+            }
+
+            &-3 {
+                background-image: radial-gradient(ellipse at center, #663399 25%, #3A2EFF);
+            }
+
+            &-4 {
+                background-image: radial-gradient(#9240FB, #FB2FF2);
+            }
+
+            &-5 {
+                background-image: radial-gradient(#228B22, #1D5B6C);
+            }
+
+            &-6 {
+                background-image: radial-gradient(#1E90FF, #241CBB);
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 20rem;
+        background-blend-mode: multiply;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+
+        &--1 {
+            background: #268026;
+        }
+
+        &--2 {
+            background: #008B8B;
+        }
+
+        &--3 {
+            background: #663399;
+        }
+
+        &--4 {
+            background: #9240FB;
+        }
+
+        &--5 {
+            background: #228B22;
+        }
+
+        &--6 {
+            background: #1E90FF;
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 8rem;
+        width: 100%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background: #268026;            
+        }
+
+        &--2 {
+            background: #008B8B;
+        }
+
+        &--3 {
+            background: #663399;
+        }
+
+        &--4 {
+            background: #9240FB;
+        }
+
+        &--5 {
+            background: #228B22;
+        }
+
+        &--6 {
+            background: #1E90FF;
+        }
+    }
+
+    &__details {
+        padding: 4.5rem;
+
+        img {
+            clip-path: circle(50% at 50% 50%);
+            margin-top: 5rem;
+        }
+    }
+
+    // BACK SIDE STYLING
+    &__full {
+        margin: 8rem auto;
+        width: 90%;
+        text-align: center;
+        font-family: 'Raleway', sans-serif; 
+    }
+
+    p {
+        color: white;
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+
+    .card_nav {
+        width: 100%;
+        text-align: center;
+        font-family: 'Raleway', sans-serif; 
+    }
+
+    a {     
+        margin: 0 50px;  
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+    }
+}
+  

@@ -1,0 +1,46 @@
+footer {
+   
+    width: 100%;
+    background: @sunset;
+    border-top: 1px solid darkslategrey;
+    text-align: center;
+    padding: .5%;
+    
+
+    nav  {
+       .display(space-evenly; center);
+       padding: 1%; 
+
+       @media @mobile {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-content: center;
+        margin: auto;
+        background-color: @midnight;
+        
+        }
+    }
+      
+    a {
+        text-decoration: none;
+        color: #ececff;
+        .button();
+
+        @media @mobile {
+            // border-bottom: 1px solid black;
+            text-decoration: underline;
+			width: 100%;
+			text-align: center;
+            padding: 2% 0;
+            color: black;
+
+           
+    }
+   }
+
+   p {
+       @media @mobile {
+           font-size: 10px;
+       }
+   }
+}
